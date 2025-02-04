@@ -5,7 +5,7 @@ set -e
 
 npx eslint --fix .
 
-npx jscpd --min-lines 3 --min-tokens 25 --threshold 0 --gitignore .
+npx jscpd --min-lines 3 --min-tokens 25 --threshold 0 --gitignore . --exclude "node_modules"
 
 npm audit
 
