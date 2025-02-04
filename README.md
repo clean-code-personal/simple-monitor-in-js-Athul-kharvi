@@ -12,15 +12,15 @@ Electric Vehicles have BMS - Battery Management Systems
 
 [Here is a reference for the maximum charge rate](https://www.electronics-notes.com/articles/electronic_components/battery-technology/li-ion-lithium-ion-charging.php#:~:text=Constant%20current%20charge:%20In%20the%20first%20stage%20of,rate%20of%20a%20maximum%20of%200.8C%20is%20recommended.)
 
-## Possible purpose
+## Monitoring
+
+An important part of the BMS is to monitor battery parameters. This helps to:
 
 - Protect batteries while charging:
 at home, in public place, within vehicle / regenerative braking
 - Estimate life, inventory and supply chains
 
-## The Starting Point
-
-We will explore the charging phase of Li-ion batteries to start with.
+The code in this repo is a starting point to develop monitoring functions.
 
 ## Issues
 
