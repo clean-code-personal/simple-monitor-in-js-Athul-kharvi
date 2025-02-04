@@ -5,7 +5,7 @@ set -e
 
 npx eslint --fix .
 
-npx jscpd --ignore node_modules --min-lines 3 --min-tokens 25 --threshold 0
+npx jscpd  --min-lines 3 --min-tokens 25 --threshold 0
 
 npm audit
 
