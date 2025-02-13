@@ -37,6 +37,7 @@ The code in this repo is a starting point to develop monitoring functions.
 the abnormal measure and the breach -
 whether high or low. Add this capability.
 1. Added Extension 1: Early Warning
+1. Adedd Extension 2: Support a language in addition to English
 
 ## The Exploration
 

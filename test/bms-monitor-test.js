@@ -1,12 +1,14 @@
 const {expect} = require('chai');
-const {batteryIsOk} = require('../bms-monitor');
+const { batteryIsOk, setLanguage } = require('../bms-monitor');
 
 describe('BMS monitor', ()=> {
   it('reports ok when all parameters are in range', ()=> {
+    setLanguage('en');
     expect(batteryIsOk(25, 70, 0.7)).to.be.true;
   });
-
+  
   it('reports not ok when temperature is out of range', ()=> {
+    setLanguage('de');
     expect(batteryIsOk(50, 85, 0)).to.be.false;
   });
 
