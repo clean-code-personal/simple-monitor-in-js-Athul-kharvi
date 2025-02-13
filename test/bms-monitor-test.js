@@ -9,4 +9,9 @@ describe('BMS monitor', ()=> {
   it('reports not ok when temperature is out of range', ()=> {
     expect(batteryIsOk(50, 85, 0)).to.be.false;
   });
+
+  it('triggers a warning when temperature is approaching the limit', () => {
+    expect(batteryIsOk(2, 70, 0.5)).to.be.true; 
+    expect(batteryIsOk(44, 70, 0.5)).to.be.true; 
+  });
 });
